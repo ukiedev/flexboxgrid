@@ -2,24 +2,6 @@
 
 Custom Flexbox Grid using Bootstrap mixins (SASS)
 
-Responsive
-Enable specifying different column sizes, offsets, alignment and distribution at col-xs, col-sm, col-md & col-lg viewport widths.
-
-Simple Syntax
-<div class="row">
-    <div class="col-xs-offset-6 col-xs-6">
-        <div class="content-box">6</div>
-    </div>
-</div>
-
-Auto Width
-Add any number of auto sizing columns to a row. Let the grid figure it out.
-<div class="row">
-    <div class="col-xs">
-        <div class="content-box">auto</div>
-    </div>
-</div>
-
 Alignment
 Flexbox container properties
 $class - 'xs, sm, md, lg'
