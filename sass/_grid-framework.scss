@@ -125,6 +125,7 @@
 	}
 }
 
+
 // Create grid for specific class
 @mixin make-grid($class) {
 	@include grid-columns($class);
@@ -132,49 +133,14 @@
 	@include loop-grid-columns($grid-columns, $class, max-width);
 	@include loop-grid-columns($grid-columns, $class, offset);
 
-
-	@if ($class == xs) {
-		@media (max-width: $screen-xs-max) {
-			@include calc-grid-flex($class, start);
-			@include calc-grid-flex($class, center);
-			@include calc-grid-flex($class, end);
-			@include calc-grid-flex($class, around);
-			@include calc-grid-flex($class, between);
-			@include calc-grid-flex($class, top);
-			@include calc-grid-flex($class, middle);
-			@include calc-grid-flex($class, bottom);
-			@include calc-grid-flex($class, self);
-			@include calc-grid-flex($class, direction);
-		}
-	}
-
-	@if ($class == sm) {
-		@media (max-width: $screen-sm-max) {
-			@include calc-grid-flex($class, start);
-			@include calc-grid-flex($class, center);
-			@include calc-grid-flex($class, end);
-			@include calc-grid-flex($class, around);
-			@include calc-grid-flex($class, between);
-			@include calc-grid-flex($class, top);
-			@include calc-grid-flex($class, middle);
-			@include calc-grid-flex($class, bottom);
-			@include calc-grid-flex($class, self);
-			@include calc-grid-flex($class, direction);
-		}
-	}
-
-	@if ($class == md) {
-		@media (max-width: $screen-md-max) {
-			@include calc-grid-flex($class, start);
-			@include calc-grid-flex($class, center);
-			@include calc-grid-flex($class, end);
-			@include calc-grid-flex($class, around);
-			@include calc-grid-flex($class, between);
-			@include calc-grid-flex($class, top);
-			@include calc-grid-flex($class, middle);
-			@include calc-grid-flex($class, bottom);
-			@include calc-grid-flex($class, self);
-			@include calc-grid-flex($class, direction);
-		}
-	}
+	@include calc-grid-flex($class, start);
+	@include calc-grid-flex($class, center);
+	@include calc-grid-flex($class, end);
+	@include calc-grid-flex($class, around);
+	@include calc-grid-flex($class, between);
+	@include calc-grid-flex($class, top);
+	@include calc-grid-flex($class, middle);
+	@include calc-grid-flex($class, bottom);
+	@include calc-grid-flex($class, self);
+	@include calc-grid-flex($class, direction);
 }
