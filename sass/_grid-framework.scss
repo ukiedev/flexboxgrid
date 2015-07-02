@@ -125,8 +125,6 @@
 	}
 }
 
-
-
 // Create grid for specific class
 @mixin make-grid($class) {
 	@include grid-columns($class);
